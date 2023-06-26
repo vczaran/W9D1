@@ -5,4 +5,21 @@ export default class Game {
         this.asteroid = new Asteroid();
     }
     
+    step () {
+
+    }
+
+    move () {
+
+    }
+
+    checkCollisions () {
+
+    }
+
+
+    draw(ctx) {
+        
+    }
+
 }

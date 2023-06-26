@@ -1,6 +1,7 @@
-console.log("Webpack is working!");
-
 import Game from "./game.js";
+import MovingObject from "./moving_object.js";
+
+object = new MovingObject;
 
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("game-canvas");
