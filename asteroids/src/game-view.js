@@ -1,3 +1,9 @@
+import Game from "./game";
+
+export default class GameView {
+
+    game = new Game ();
+
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("game-canvas");
     canvas.height = 1000;
@@ -7,3 +13,4 @@ document.addEventListener("DOMContentLoaded", () => {
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, 500, 1000);
 });
+}

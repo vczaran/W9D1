@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _game_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./game.js */ \"./src/game.js\");\nconsole.log(\"Webpack is working!\");\n\n\n\n//# sourceURL=webpack://asteroids/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _game_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./game.js */ \"./src/game.js\");\nconsole.log(\"Webpack is working!\");\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n    const canvas = document.getElementById(\"game-canvas\");\n    canvas.height = 1000;\n    canvas.width = 500;\n    const ctx = canvas.getContext(\"2d\");\n\n    ctx.fillStyle = \"black\";\n    ctx.fillRect(0, 0, 500, 1000);\n});\n\n//# sourceURL=webpack://asteroids/./src/index.js?");
 
 /***/ }),
 
