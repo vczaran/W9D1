@@ -1,7 +1,7 @@
 import Game from "./game.js";
 import MovingObject from "./moving_object.js";
 
-object = new MovingObject;
+window.MovingObject = MovingObject;
 
 document.addEventListener("DOMContentLoaded", () => {
     const canvas = document.getElementById("game-canvas");
@@ -11,4 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ctx.fillStyle = "black";
     ctx.fillRect(0, 0, 500, 1000);
+
+    // ctx.beginPath();
+    // ctx.arc(50,50,100,0,2*Math.PI);
+    // ctx.fillStyle = 'white';
+    // ctx.fill();
 });
+
+let game = new Game(canvas);
+game.draw();
